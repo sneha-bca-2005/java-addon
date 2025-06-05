@@ -1,39 +1,39 @@
 
+import java.util.Scanner;
 
-class Main {
+public class GradeEvaluation {
     public static void main(String[] args) {
-        char a;
-        char b;
-        char c;
-        char d;
-        char e;
-     char grade=1;
-     switch(grade){ 
-         case 1:
-        System.out.println("excellent");
-         
-        case 2:
-        System.out.println("good");  
-        
-        case 3:
-        System.out.println("average");
-        
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter your grade (A/B/C/D/F): ");
+        char grade = scanner.next().toUpperCase().charAt(0);
 
-       case 4:
-        System.out.println("poor");
         
-     
-      case 5:
-        System.out.println("fail");
+        switch (grade) {
+            case 'A':
+                System.out.println("Excellent");
+                break;
+            case 'B':
+                System.out.println("Good");
+                break;
+            case 'C':
+                System.out.println("Average");
+                break;
+            case 'D':
+                System.out.println("Poor");
+                break;
+            case 'F':
+                System.out.println("Fail");
+                break;
+            default:
+                System.out.println("Invalid grade");
+                break;
+        }
+
+        scanner.close();
+    }
+}
+
+        
        
-       default :
-      System.out.println("invalid");
-      
-      
-     }
-    }
-        
-    }
-      
       
