@@ -2,11 +2,11 @@ public class laptop {
     String modelname;
 	int  ramsize;
 	
-laptop(String name,int size){
+laptop(String modelname,int ramsize){
 	   
 		
-		this.modelname=name;
-		this.ramsize=size;
+		this.modelname=modelname;
+		this.ramsize=ramsize;
 	}
 	laptop(laptop copy){
 	    this.modelname=copy.modelname;
