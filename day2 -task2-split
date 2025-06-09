@@ -1,6 +1,6 @@
 public class split {
   public static void main(String[] args) {
-    String str=" split a word using java programing";
+    String str="split a word using java programing";
     String regex="[,.\s]";
     String[] myArray=str.split(regex);
     for(String s : myArray){
