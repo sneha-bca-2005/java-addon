@@ -1,0 +1,19 @@
+import java.util.*;
+public class singlelevel{
+    void message()
+    {
+     System.out.println("hi...");
+}
+}
+class subclass extends singlelevel{
+    void view(){
+    System.out.println("hello...");
+    }
+}
+class main{
+    public static void main(String[] args){
+        subclass ref=new subclass();
+        ref.view();
+        ref.message();
+    }
+}
