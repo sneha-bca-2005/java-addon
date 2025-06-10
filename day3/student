@@ -1,22 +1,27 @@
 import java.util.*;
  public class student{
-    void detail(String name)
-    {
+     void detail(String name,int marks){
+   
        System.out.println("your name:"+name);
-       
-        }
- void detail(String name,int marks,int results){
-       int total=marks*results;
-       
-        System.out.println("total prices:"+total);
+         System.out.println("your marks:"+marks);
+        
         
     }
+    
+ void detail(String name,int marks,String results){
+   
+       
+        System.out.println("results:"+results);
+        
+    }
+ 
+    
 public static void main(String[] args){
 
 student ref=new student(); 
-
+student ref2=new student();
 ref.detail("stu1",80,"pass");
-ref.detail("stu2",70,"pass");
+ref2.detail("stu2",70,"pass");
 
 
 ref.detail("stu3",30,"fail");
