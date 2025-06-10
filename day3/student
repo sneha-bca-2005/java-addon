@@ -1,30 +1,26 @@
+
 import java.util.*;
- public class student{
-     void detail(String name,int marks){
-   
-       System.out.println("your name:"+name);
-         System.out.println("your marks:"+marks);
-        
-        
-    }
-    
- void detail(String name,int marks,String results){
-   
-       
-        System.out.println("results:"+results);
-        
-    }
- 
-    
-public static void main(String[] args){
-
-student ref=new student(); 
-student ref2=new student();
-ref.detail("stu1",80,"pass");
-ref2.detail("stu2",70,"pass");
+ public class Student {
+      
+ void detail(String name,int mark){  
+   System.out.println("name:"+name);
+    System.out.println("mark:"+mark);
 
 
-ref.detail("stu3",30,"fail");
+}
+    void detail(String name,int mark,String result){
+System.out.println("result:"+result); 
 
+
+
+}
+public static void main(String[] args) {
+
+
+    Student ref=new Student();
+    ref.detail("sneha",250);
+    ref.detail("sneha",250,"fail");
+ref.detail("sneha",400);
+    ref.detail("sneha",400,"pass");
 }
 }
