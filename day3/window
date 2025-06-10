@@ -1,0 +1,20 @@
+import java.util.*;
+
+ class laptop{
+   void os(){
+     System.out.println("windows 10");
+   }
+ }
+ class update extends laptop{
+   void os(){
+     System.out.println("windows 11");
+   }
+ }
+class main{
+   public static void main(String[] args) {
+    update u=new update();
+    u.os();
+  }
+
+ }
+    
