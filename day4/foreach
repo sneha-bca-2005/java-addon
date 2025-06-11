@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+public class ArrayListClass{
+	public static void main(String[] args) {
+		
+
+ArrayList<Integer> arr=new ArrayList();
+ArrayList<Object> arr2=new ArrayList();
+arr.add(10);
+arr.add(20);
+arr.add(30);
+//arr.add(40);
+//arr.add(50);
+//ti iterate the objects
+arr.forEach(num-> System.out.println(num*num));
+//validate the voting(age)
+arr.forEach(age->{
+    if(age>18){
+    System.out.println("allowed");
+   }
+   else{
+       System.out.println("not allowed");
+    }
+});
+
+arr2.add("hai java");
+System.out.println(arr);
+System.out.println(arr2);
+}
+
+}
