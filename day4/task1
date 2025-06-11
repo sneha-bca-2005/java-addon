@@ -1,16 +1,26 @@
-import java.util.*;
-class main{
-    public static void main(String[] args){
-        Scanner in=new Scanner(System.in);
-        try{
-         System.out.println("enter the number:");    
-       int num=in.nextInt();
-       int total=10/num;
-       System.out.println("divide by zero:"+total);
-        
-        }
-        catch(Exception e){
-             System.out.println("divide by zero:"+e);
-        }
-    }
-}
+import java.util.*; 
+
+public class CatchException { 
+
+        public static void main(String[] args) { 
+    Scanner s = new Scanner(System.in); 
+        try { 
+      System.out.println("Enter the number a:"); 
+      int a = s.nextInt(); 
+System.out.println("Enter the number b:"); 
+     int b = s.nextInt(); 
+    System.out.println("result:" + (a / b)); 
+
+    } 
+    catch (ArithmeticException e) { 
+
+         int result =0; 
+         //if (result == 0) { 
+//System.out.println("Succesfully executed"); 
+                 
+               
+                } 
+
+        } 
+
+} 
