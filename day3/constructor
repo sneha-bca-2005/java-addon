@@ -1,0 +1,37 @@
+import java.util.*;
+public class defaultconstructor {
+    String name;
+    String language;
+    int year;
+	defaultconstructor(String name,int year,String lang){
+	    this.name=name;
+	    this.year=year;
+	    this.language=lang;
+	      System.out.println("default constructor"+" "+name+" "+year+ " "+lang);
+    }
+    //copy constructor
+    	defaultconstructor(defaultconstructor copy){
+    	  this.name=copy.name;
+	    this.year=copy.year;
+	   
+    	}
+void Display(){
+    System.out.println("default constructor"+" "+name+" "+year );
+}
+public static void main(String[] args){
+    
+    // to create object
+    //classname reference variable=new classname();
+   // defaultconstructor ref=new defaultconstructor();
+  System.out.println("original constructor");
+  
+    defaultconstructor ref=new defaultconstructor("java",1995,"english");
+    ref.Display();
+    System.out.println("copy constructor");
+  
+    defaultconstructor ref2=new defaultconstructor(ref);
+    ref2.Display();
+}
+
+	
+}
