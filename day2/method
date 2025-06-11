@@ -1,0 +1,15 @@
+package day2;
+
+public class methods {
+	public static void details(String name,  String job,String salary) {
+		System.out.println("hai" +" "+name+" "+job+" "+salary);
+		
+	}
+	
+
+	public static void main(String[] args) {
+		details( "sneha","developer","4lpa");
+		details( "hema","developer","4lpa");
+	}
+
+}
