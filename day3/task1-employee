@@ -1,0 +1,25 @@
+import java.util.*;
+ public class salaries{
+    void employ(String category,double Salary,String employ_type)
+    {
+       System.out.println("your category:"+category);
+        System.out.println("your salary:"+Salary);
+        }
+void employ(String category,double Salary, int time,String employ_type)
+    {
+double salary=time*Salary;
+System.out.println(Salary);
+}
+public static void main(String[] args){
+System.out.println("employee salary");
+salaries ref=new salaries(); 
+System.out.println("enter the full time salary");
+ref.employ("emp1",1000,10,"fulltime");
+System.out.println("enter the part time salary");
+ref.employ("emp2",700,6,"parttime");
+
+System.out.println("enter the per time salary");
+ref.employ("emp3",100,1,"pertime");
+
+}
+}
