@@ -1,0 +1,25 @@
+import java.util.*;
+ public class Student {
+      
+ void detail(String name,int mark){  
+   System.out.println("name:"+name);
+    System.out.println("mark:"+mark);
+
+
+}
+    void detail(String name,int mark,String result){
+System.out.println("result:"+result); 
+
+
+
+}
+public static void main(String[] args) {
+
+
+    Student ref=new Student();
+    ref.detail("sneha",250);
+    ref.detail("sneha",250,"fail");
+ref.detail("sneha",400);
+    ref.detail("sneha",400,"pass");
+}
+}
