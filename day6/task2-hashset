@@ -1,0 +1,22 @@
+import java.util.HashSet;
+public class student{
+	public static void main(String[] args) {
+		
+
+
+HashSet<String> studentmail=new HashSet<>();
+
+
+studentmail.add("john@gamil.com");
+
+studentmail.add("sneha@gmail.com");
+studentmail.add("hari@gmail.com");
+
+
+//validate the voting(age)
+for(String data:studentmail){
+System.out.println(data);
+
+}
+}
+}
