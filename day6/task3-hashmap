@@ -1,0 +1,28 @@
+public class student{
+	public static void main(String[] args) {
+		
+
+
+HashMap<String,Integer> student=new HashMap<String,Integer>();
+
+
+student.put("john",100);
+
+student.put("sneha",50);
+student.put("hari",70);
+
+
+//validate the voting(age)
+int totalmarks=0;
+for(int marks:student.values()){
+    totalmarks+=marks;
+    
+}
+    
+    System.out.println(totalmarks);
+double average=totalmarks/student.size();
+System.out.println(average);
+System.out.println(student);
+
+}
+}
