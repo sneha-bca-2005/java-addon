@@ -1,19 +1,19 @@
 import java.util.LinkedList;
-public class ArrayListClass{
+public class LinkedListClass{
 	public static void main(String[] args) {
 		
 
 
-LinkedList<Object> arr=new LinkedList<Object>();
-arr.remove("sneha");
+LinkedList<Object> vn=new LinkedList<Object>();
+vn.remove("sneha");
 
-arr.add("A");
-arr.add("computer application");
-arr.add("3 year");
-arr.add(0,"HARI");
-arr.set(0,"john");
-System.out.println(arr.get(1));
-arr.forEach(date-> System.out.println(date));
+vn.add("A");
+vn.add("computer application");
+vn.add("3 year");
+vn.add(0,"HARI");
+vn.set(0,"john");
+System.out.println(vn.get(1));
+vn.forEach(date-> System.out.println(date));
 
 
 }
