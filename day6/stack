@@ -1,0 +1,23 @@
+import java.util.Stack;
+public class stackclass{
+	public static void main(String[] args) {
+		
+
+
+Stack<Object> vn=new Stack<Object>();
+vn.remove("sneha");
+
+vn.add("A");
+vn.add("computer application");
+vn.add("3 year");
+vn.add(0,"HARI");
+vn.set(0,"john");
+System.out.println(vn.get(1));
+vn.forEach(date-> System.out.println(date));
+
+
+}
+}
+//for(Object data:arr){
+    //System.out.println(data);
+//}
