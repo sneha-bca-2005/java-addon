@@ -1,0 +1,11 @@
+create table student(
+  tname varchar(20)
+  );
+insert into student(tname)
+values('john');
+insert into student(tname)
+values('priya');
+insert into student(tname)
+values('sneha');
+insert into student(tname)
+values('hari');
