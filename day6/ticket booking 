@@ -1,0 +1,19 @@
+public class TaskThreads extends Thread{
+   private String UserName;
+   private String TicketBooking;
+   private int SetToSeat;
+    TaskThreads(String UserName,String TicketBooking,int SetToSeat){
+        this.UserName=UserName;
+        this.TicketBooking=TicketBooking;
+        this.SetToSeat=SetToSeat;
+    }
+    public synchronized void display(String userName, int requestedSeats) {
+        System.out.println("userName + " is trying to book " + requestedSeats + "seat(s)...");
+");
+        try {
+            // Simulating some processing time
+            Thread.sleep(1000); // Sleep for 1 second
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted: " + e.getMessage());
+        }
+        System.out.println("Message: " + message);
