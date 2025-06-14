@@ -1,15 +1,18 @@
- create table course1(
+ create table course3(
   coursename varchar(40),
      coursefee int
 );
 
-insert into course1(coursename, coursefee)
+insert into course3(coursename, coursefee)
 values('computer application',24000);
-insert into course1(coursename, coursefee)
+insert into course3(coursename, coursefee)
 values('cyber security',50000);
-insert into course1(coursename, coursefee)
+insert into course3(coursename, coursefee)
 values('computer science',35000);
-insert into course1(coursename, coursefee)
+insert into course3(coursename, coursefee)
 values('aritificial intelligence',24000);
-insert into course1(coursename, coursefee)
+insert into course3(coursename, coursefee)
 values('commerce',35000);
+update course3
+set coursefee=25000,coursefee=40000
+where coursename='cyber security';
