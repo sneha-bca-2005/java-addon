@@ -1,0 +1,28 @@
+create table employee28(
+    empid int,
+    name varchar(25),
+    dept varchar(25),
+    salary int,
+    joindate date
+);
+insert into employee28 values(232235,'sneha','computer application',25000,'23-02-2012');
+insert into employee28 values(232240,'hari','computer science',25000,'07-06-2023');
+insert into employee28 values(232279,'sumi','computer application',25000,'23-02-2012');
+insert into employee28 values(232267,'hema','computer application',20000,'15-04-2024');
+insert into employee28 values(232245,'pavi','cyber security',25000,'23-02-2012');
+//change to  record
+update employee28 set dept='web development'
+where empid=232245;
+//salary increase
+update employee28 set salary= salary+5000
+where dept='computer application';
+select*from employee28 where dept='computer application';
+//equal all condition
+ select *from employee28 where dept='computer application' and salary<5000;
+//one condition check is true
+ select*from employee28 where dept='computer application' or dept='web development';
+//one records
+delete from employee28 where empid=3;
+//only the three items
+select name,dept,joindate from employee28 where dept='computer application' and joindate>23-02-2012 order by joindate desc;
+
