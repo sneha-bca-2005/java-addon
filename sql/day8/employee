@@ -1,17 +1,25 @@
-create table employee21(
+ccreate table employee28(
     empid int,
     name varchar(25),
     dept varchar(25),
     salary int,
     joindate date
 );
-insert into employee21 values(232235,'sneha','computer application',25000,'23-02-2012');
-insert into employee21 values(232240,'hari','computer science',25000,'07-06-2023');
-insert into employee21 values(232279,'sumi','computer application',25000,'23-02-2012');
-insert into employee21 values(232267,'hema','computer application',20000,'15-04-2024');
-insert into employee21 values(232245,'pavi','cyber security',25000,'23-02-2012');
-select*from employee21 where dept='computer application';
-update employee21 set dept='web development'
+insert into employee28 values(232235,'sneha','computer application',25000,'23-02-2012');
+insert into employee28 values(232240,'hari','computer science',25000,'07-06-2023');
+insert into employee28 values(232279,'sumi','computer application',25000,'23-02-2012');
+insert into employee28 values(232267,'hema','computer application',20000,'15-04-2024');
+insert into employee28 values(232245,'pavi','cyber security',25000,'23-02-2012');
+
+update employee28 set dept='web development'
 where empid=232245;
-update employee21 set salary= salary+5000
+update employee28 set salary= salary+5000
 where dept='computer application';
+select*from employee28 where dept='computer application';
+
+ select *from employee28 where dept='computer application' and salary<5000;
+ select*from employee28 where dept='computer application' or dept='web development';
+
+delete from employee28 where empid=3;
+select name,dept,joindate from employee28 where dept='computer application' and joindate>23-02-2012 order by joindate desc;
+
