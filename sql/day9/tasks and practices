@@ -221,4 +221,6 @@ from emp6 full outer join dept
 on emp6.deptno=dept.deptno;
 
 
-
+select e1.ename emp_name,e2.sal mgr_sal
+from emp6 e1,emp6 e2
+where e1.mgr=e2.empno AND e2.sal>2300 and e1.sal>2300;
