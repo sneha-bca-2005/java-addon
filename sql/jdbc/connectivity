@@ -1,0 +1,81 @@
+package mysql;
+
+import java.sql.*;
+
+public class jdbamain {
+        	   public static void main(String[] args) throws Exception {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+        		   String url="jdbc:mysql://localhost:3306/databasename in mysql";
+        		   String username="root";
+        		   String password="";
+        		  // interface
+        		   Connection connect=DriverManager.getConnection(url,username, password);
+            System.out.println("driver loaded");
+            Statement st=connect.createStatement();
+            
+//            int id=03;
+//            String name="ims";
+//            
+//            
+//            String sql="insert into course values(?,?)";
+//            PreparedStatement st1=connect.prepareStatement(sql);
+//            st1.setInt(1, id);
+//            st1.setString(2,name);
+//            
+//            st1.executeUpdate();
+//            System.out.println("date inserted done using prepared statement");
+//            connect.close();
+            
+            
+            
+            
+       ---------------------------------------------------------------------------------------------
+            //String sql="select *from emp";
+           // String sql="select ename from emp where sal>2000";
+          //ResultSet rs=st.executeQuery(sql);
+            
+//          while(rs.next()) {
+//     	   System.out.println(rs.getInt(1)+ " " +rs.getString(2)+ " " +rs.getString(3));
+//        }
+//        while(rs.next()) {
+//     	   System.out.println(rs.getInt(1)+ " " +rs.getString(2)+ " " +rs.getString(3));
+//        }
+//        rs.next();
+//        System.out.println(rs.getInt(1)+ " " +rs.getString(2)+ " " +rs.getString(3));
+//        rs.next();
+//        System.out.println(rs.getInt(1)+ " " +rs.getString(2)+ " " +rs.getString(3));
+      ---------------------------------------------------------------------------    
+      
+//            String sql="drop table course";
+//            int val=st.executeUpdate(sql);
+//            System.out.println("table deleted");
+            
+     ------------------------------------------------------------------------------  
+     
+//            String sql="update course set cname='wd' where id='01'";
+//            int val=st.executeUpdate(sql);
+//            System.out.println("updated"+" "+val+"rows");
+     
+    -----------------------------------------------------------------------------------
+    
+            //String sql="insert into course(01,'fsd')";
+            //int val=st.executeUpdate(sql);
+            //System.out.println("inserted "+" "+val+"rows");
+    
+     -----------------------------------------------------------------------------------
+            //String sql="create table course(id int,name varchar(20))";
+            //int val=st.executeUpdate(sql);
+           // System.out.println("table created successfully");
+      -----------------------------------------------------------------------------------
+      int id=03;
+      String name="ims";
+      
+      
+      
+      
+      
+      
+   
+
+       }
+}
