@@ -18,3 +18,11 @@ create table customers2(
   insert into customers2 values('sneha',001);
   insert into customers2 values('pavi',002);
 insert into customers2 values('hema',003);
+
+
+SELECT*
+FROM orders1
+JOIN customers2
+ON customers2.ord1 = orders1.ord1
+
+
