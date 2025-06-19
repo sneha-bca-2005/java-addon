@@ -1,0 +1,12 @@
+create table student11(
+  sname varchar(20),
+  smark int);
+
+INSERT  INTO student11(sname,smark)values
+     ('Priya',95),
+     ('Harish',85),
+     ('sumi',70);
+     
+         select *
+    from student11
+     where smark>80;
