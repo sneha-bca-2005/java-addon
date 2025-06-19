@@ -1,0 +1,20 @@
+create table orders1(
+  ord1 int,
+  qty int,
+  price int
+);
+  insert into orders1 values(001,2,100);
+  insert into orders1 values(002,4,200);
+insert into orders1 values(003,5,250);
+
+
+
+
+create table customers2(
+  name varchar(20),
+ ord1 int
+
+);
+  insert into customers2 values('sneha',001);
+  insert into customers2 values('pavi',002);
+insert into customers2 values('hema',003);
